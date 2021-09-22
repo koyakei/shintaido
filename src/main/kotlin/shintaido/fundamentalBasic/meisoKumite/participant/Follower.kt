@@ -5,7 +5,6 @@ import shintaido.movePart.追従.Following
 /**
  * 従う目標を設定するのか？
  */
-interface Follower {
+interface Follower :Following{
 
-    val followingTarget: Following
 }
