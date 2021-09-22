@@ -1,6 +1,8 @@
-package infomaticCurrency.variationOfCurrentize
+package infomaticCurrency
 
-import infomaticCurrency.RuleOfUnitOfCurrency
+import infomaticCurrency.variationOfCurrentize.RuleForCreation
+import infomaticCurrency.variationOfCurrentize.RuleForExchanging
+import infomaticCurrency.variationOfCurrentize.RuleForReading
 
 /**
  *

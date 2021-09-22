@@ -1,6 +1,6 @@
 package infomaticCurrency.money
 
-import infomaticCurrency.variationOfCurrentize.通貨性
+import infomaticCurrency.通貨性
 
 interface Money : 通貨性 {
     /**
