@@ -1,4 +1,4 @@
-package shintaido.fundamentalBasic.四体勢理論
+package shintaido.fundamentalBasic.四体勢理論.subPosture
 
 /**
  * 開いて自分を出していく
