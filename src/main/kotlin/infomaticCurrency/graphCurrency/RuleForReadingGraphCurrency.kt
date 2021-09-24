@@ -1,0 +1,5 @@
+package infomaticCurrency.graphCurrency
+
+import infomaticCurrency.variationOfCurrentize.RuleForReading
+
+sealed interface RuleForReadingGraphCurrency: RuleForReading

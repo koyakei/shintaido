@@ -5,6 +5,8 @@ import shintaido.fundamentalBasic.tenshingoso.TenshingosoElement
 /**
  * 消滅
  */
-class ウン(override val nextElement: TenshingosoElement = オ()
-, override val beforeElement: TenshingosoElement= ア()) : TenshingosoElement {
+interface  ウン: TenshingosoElement {
+    override val nextElement:  ア
+
+    override val beforeElement:オ
 }

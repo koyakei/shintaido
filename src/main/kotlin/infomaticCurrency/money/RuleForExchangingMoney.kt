@@ -8,6 +8,7 @@ import infomaticCurrency.variationOfCurrentize.RuleForExchanging
  * どう表現するんだよ
  *
  * ここに目標を書けばいいのか？交換
+ * TODO: ここから書く　お金の所有権を贈与で移転した場合にどのような変化があるのか？
  */
 interface RuleForExchangingMoney : RuleForExchanging {
     val exchangeMarket: ExchangeMarket

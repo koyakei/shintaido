@@ -1,4 +1,4 @@
-package infomaticCurrency.graphCurrency
+package informaticCurrenecy.graphCurrency
 
 import infomaticCurrency.RuleOfUnitOfCurrency
 

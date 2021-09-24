@@ -1,6 +1,8 @@
-package infomaticCurrency.money
+package informaticCurrenecy.money
 
 import infomaticCurrency.RuleOfUnitOfCurrency
+import infomaticCurrency.money.Money
+import infomaticCurrency.money.RuleForExchangingMoney
 import infomaticCurrency.variationOfCurrentize.RuleForCreation
 import infomaticCurrency.variationOfCurrentize.RuleForExchanging
 import infomaticCurrency.variationOfCurrentize.RuleForReading

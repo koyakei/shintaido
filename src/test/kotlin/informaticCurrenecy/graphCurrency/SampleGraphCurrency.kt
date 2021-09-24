@@ -1,6 +1,8 @@
-package infomaticCurrency.graphCurrency
+package informaticCurrenecy.graphCurrency
 
 import infomaticCurrency.RuleOfUnitOfCurrency
+import infomaticCurrency.graphCurrency.GraphCurrency
+import infomaticCurrency.graphCurrency.SingleGraphCurrencyUnit
 import infomaticCurrency.variationOfCurrentize.RuleForCreation
 import infomaticCurrency.variationOfCurrentize.RuleForExchanging
 import infomaticCurrency.variationOfCurrentize.RuleForReading
@@ -19,8 +21,10 @@ class SampleGraphCurrency(
     override val name: 通貨性.NameOfCurrency,
     override val ruleForCreation: RuleForCreation,
     override val ruleForExchanging: RuleForExchanging,
-    override val ruleForReading: RuleForReading
-) : 通貨性 {
+    override val ruleForReading: RuleForReading,
+    override val ruleOfUnitOfCurrency: RuleOfUnitOfCurrency,
+    override val setSingleInformaticCurrencyUnit: Set<SingleGraphCurrencyUnit> //ここで入れる必要ないんじゃないかな。　たくさんになるし、集約のインターフェイスをぢ杏優しておくか
+) : GraphCurrency {
 
     override val unitOfCurrency: RuleOfUnitOfCurrency = Sampleグラフ通貨の単位のルール()
 }

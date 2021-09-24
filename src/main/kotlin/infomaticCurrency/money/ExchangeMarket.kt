@@ -1,6 +1,5 @@
 package infomaticCurrency.money
 
-
 /**
  *　
  */
