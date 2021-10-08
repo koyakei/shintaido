@@ -1,0 +1,4 @@
+package infomaticCurrency.variationOfCurrentize.ruleForFunction
+
+interface RuleForReading :RuleForCurrencyFunction{
+}

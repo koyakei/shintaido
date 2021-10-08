@@ -1,0 +1,4 @@
+package infomaticCurrency.variationOfCurrentize.ruleForPropertyLifeCycle
+
+interface RuleForExchangeProperty :RuleForPropertyLifeCycle{
+}

@@ -1,6 +1,6 @@
 package infomaticCurrency.graphCurrency
 
-import infomaticCurrency.InformaticCurrency
+import infomaticCurrency.basic.InformaticCurrency
 
 interface GraphCurrency: InformaticCurrency {
     override val setSingleInformaticCurrencyUnit: Set<SingleGraphCurrencyUnit>

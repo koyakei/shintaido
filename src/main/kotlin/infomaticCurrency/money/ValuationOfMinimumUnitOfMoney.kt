@@ -1,6 +1,6 @@
 package infomaticCurrency.money
 
-import infomaticCurrency.RuleOfMinimumUnitOfCurrency
+import infomaticCurrency.basic.RuleOfMinimumUnitOfCurrency
 import infomaticCurrency.money.market.MarketParticipant
 
 interface ValuationOfMinimumUnitOfMoney : RuleOfMinimumUnitOfCurrency {

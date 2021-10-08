@@ -1,0 +1,4 @@
+package infomaticCurrency.variationOfCurrentize.propertyLifeCycle
+
+interface CurrencyPropertyLifecycle {
+}

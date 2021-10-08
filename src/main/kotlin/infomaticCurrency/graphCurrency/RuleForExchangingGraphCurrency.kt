@@ -1,8 +1,8 @@
 package infomaticCurrency.graphCurrency
 
-import infomaticCurrency.variationOfCurrentize.RuleForCreation
+import infomaticCurrency.variationOfCurrentize.ruleForFunction.RuleForCreation
 
-sealed interface RuleForExchangingGraphCurrency: RuleForCreation{
+sealed interface RuleForExchangingGraphCurrency: RuleForCreation {
 
     override val publisherTerm: GraphCurrencyMovingRightHolder
 

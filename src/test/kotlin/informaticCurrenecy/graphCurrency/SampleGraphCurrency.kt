@@ -1,12 +1,12 @@
 package informaticCurrenecy.graphCurrency
 
-import infomaticCurrency.RuleOfMinimumUnitOfCurrency
+import infomaticCurrency.basic.RuleOfMinimumUnitOfCurrency
 import infomaticCurrency.graphCurrency.GraphCurrency
 import infomaticCurrency.graphCurrency.SingleGraphCurrencyUnit
-import infomaticCurrency.variationOfCurrentize.RuleForCreation
-import infomaticCurrency.variationOfCurrentize.RuleForExchanging
-import infomaticCurrency.variationOfCurrentize.RuleForReading
-import infomaticCurrency.通貨性
+import infomaticCurrency.variationOfCurrentize.ruleForFunction.RuleForCreation
+import infomaticCurrency.variationOfCurrentize.ruleForFunction.RuleForExchangingProperty
+import infomaticCurrency.variationOfCurrentize.ruleForFunction.RuleForReading
+import infomaticCurrency.basic.通貨性
 
 /**
  * 自分のタグ系重視の通貨をお金と反対の性質を持つ通貨として設計する
@@ -20,7 +20,7 @@ import infomaticCurrency.通貨性
 class SampleGraphCurrency(
     override val name: 通貨性.NameOfCurrency,
     override val ruleForCreation: RuleForCreation,
-    override val ruleForExchanging: RuleForExchanging,
+    override val ruleForExchangingProperty: RuleForExchangingProperty,
     override val ruleForReading: RuleForReading,
     override val ruleOfMinimumUnitOfCurrency: RuleOfMinimumUnitOfCurrency,
     override val setSingleInformaticCurrencyUnit: Set<SingleGraphCurrencyUnit> //ここで入れる必要ないんじゃないかな。　たくさんになるし、集約のインターフェイスをぢ杏優しておくか

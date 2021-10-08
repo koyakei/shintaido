@@ -1,0 +1,6 @@
+package infomaticCurrency.variationOfCurrentize.propertyLifeCycle
+
+import shintaido.fundamentalBasic.tenshingoso.element.ア
+
+interface CurrencyPropertyCreationEvent:CurrencyPropertyLifecycle,ア {
+}
