@@ -2,7 +2,7 @@ package infomaticCurrency.money.currentizeVariation.lifeCycleEvent
 
 import infomaticCurrency.basic.currencyRepository.CurrencyPropertyRepository
 import infomaticCurrency.money.Money
-import infomaticCurrency.money.moneyRepository.MoneyDeleteRequest
+import infomaticCurrency.money.moneyRepository.MoneyDeleteRequestDTO
 import infomaticCurrency.variationOfCurrentize.variationOfLifeCycleEvent.CurrencyDeleteEvent
 
 interface MoneyDeleteEvent :CurrencyDeleteEvent{
@@ -11,7 +11,7 @@ interface MoneyDeleteEvent :CurrencyDeleteEvent{
                moneyAmount: Money.Amount
     ){
         currencyPropertyRepository.delete(
-            MoneyDeleteRequest(kumiteParticipantIdentifier,moneyAmount)
+            MoneyDeleteRequestDTO(kumiteParticipantIdentifier,moneyAmount)
         )
     }
 }

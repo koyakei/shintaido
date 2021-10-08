@@ -1,5 +1,5 @@
 package infomaticCurrency.basic.currencyRepository
 
-interface CurrencyDeleteRequest{
+interface CurrencyDeleteRequestDTO{
     val kumiteParticipantIdentifier: KumiteParticipant.Identifier
 }

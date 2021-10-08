@@ -1,7 +1,7 @@
 package infomaticCurrency.money.currentizeVariation.lifeCycleEvent
 
 import infomaticCurrency.basic.Trader
-import infomaticCurrency.basic.currencyRepository.CurrencyPropertyDTO
+import infomaticCurrency.basic.currencyRepository.CurrencyPropertySaveRequestDTO
 import infomaticCurrency.basic.currencyRepository.CurrencyPropertyRepository
 import infomaticCurrency.variationOfCurrentize.variationOfLifeCycleEvent.CurrencyCreationEvent
 
@@ -18,7 +18,7 @@ interface MoneyCreationEvent :CurrencyCreationEvent{
     fun handle(amount: Number, publisher: Trader){
 //　お金の発行を永続リポジトリに保存する
         // 所有者　個数
-        currencyPropertyRepository.save(CurrencyPropertyDTO(
+        currencyPropertyRepository.save(CurrencyPropertySaveRequestDTO(
             1,publisher,amount
         ))
     }
