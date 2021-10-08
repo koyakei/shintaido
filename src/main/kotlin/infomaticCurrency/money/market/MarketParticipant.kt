@@ -1,4 +1,4 @@
-package infomaticCurrency.money
+package infomaticCurrency.money.market
 
 import KumiteParticipant
 

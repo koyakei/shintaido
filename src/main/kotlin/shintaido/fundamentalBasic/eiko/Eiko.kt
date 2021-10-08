@@ -1,8 +1,9 @@
 package shintaido.fundamentalBasic.eiko
 
 import shintaido.fundamentalBasic.mudrah.Mudrah
+import shintaido.fundamentalBasic.tenshinGyro.天
 
-interface Eiko: Mudrah {
+interface Eiko: Mudrah ,天{
 
     interface 目標が有界でない{
         @JvmInline

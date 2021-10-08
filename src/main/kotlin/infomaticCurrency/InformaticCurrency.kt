@@ -6,5 +6,5 @@ interface InformaticCurrency
     // 通貨の単位一個ごとに取引ルールがあるが、それは通貨全体を参照しないとわからないのか？
     // まあそれでよいか
         val setSingleInformaticCurrencyUnit: Set<SingleInformaticCurrencyUnit>
-        val ruleOfUnitOfCurrency: RuleOfUnitOfCurrency
+        val ruleOfMinimumUnitOfCurrency: RuleOfMinimumUnitOfCurrency
 }

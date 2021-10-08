@@ -1,4 +1,4 @@
-package shintaido.movePart.攻防
+package shintaido.movePart.攻防.切込切払理論
 
 /**
  * 切込と栄光の間に親子関係は作らないものとする

@@ -1,6 +1,6 @@
 package infomaticCurrency
 
-interface RuleOfUnitOfCurrency {
+interface RuleOfMinimumUnitOfCurrency {
     @JvmInline
     value class Identifier(val int: Int)
     val identifier: Identifier

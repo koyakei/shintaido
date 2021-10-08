@@ -1,8 +1,8 @@
 package informaticCurrenecy.graphCurrency
 
-import infomaticCurrency.RuleOfUnitOfCurrency
+import infomaticCurrency.RuleOfMinimumUnitOfCurrency
 
-class Sampleグラフ通貨の単位のルール(): RuleOfUnitOfCurrency {
-    override val identifier: RuleOfUnitOfCurrency.Identifier = RuleOfUnitOfCurrency.Identifier(1)
+class Sampleグラフ通貨の単位のルール(): RuleOfMinimumUnitOfCurrency {
+    override val identifier: RuleOfMinimumUnitOfCurrency.Identifier = RuleOfMinimumUnitOfCurrency.Identifier(1)
     override val name: String = "グラフ通貨"
 }

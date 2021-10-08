@@ -1,4 +1,4 @@
-package shintaido.movePart.追従
+package shintaido.movePart.主従
 
 interface Leading {
     /**

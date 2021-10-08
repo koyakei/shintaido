@@ -5,7 +5,7 @@ import shintaido.fundamentalBasic.mudrah.MudrahSize
 import shintaido.fundamentalBasic.技の効く条件.step.SizePhysically
 
 
-interface 体による印: Mudrah {
+interface 位: Mudrah {
     /**
      * 体による印の大きさの定義
      * プロパティーの値が大きくなるほど
@@ -43,8 +43,4 @@ interface 体による印: Mudrah {
      * 発音の単純さ
      */
     val pronunciationDifficulty: Int
-
-    /**
-     *
-     */
 }
