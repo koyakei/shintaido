@@ -1,0 +1,4 @@
+package infomaticCurrency.money.currentizeVariation.ruleForPropertyLifeCycle
+
+interface RuleForMoneyLifeCycle {
+}
