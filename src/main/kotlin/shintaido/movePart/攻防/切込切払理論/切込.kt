@@ -6,5 +6,6 @@ package shintaido.movePart.攻防.切込切払理論
  * 切込自体は受けでも攻撃でも使う
  */
 interface 切込 {
+    fun handle()
 
 }

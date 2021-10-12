@@ -1,6 +1,6 @@
 package shintaido.movePart.攻防.刃の向き
 
-class 持ち手の向き(val direction: Direction = 順刃) {
+interface 持ち手の向き {
     @JvmInline
     value class Direction(val boolean: Boolean)
     companion object{

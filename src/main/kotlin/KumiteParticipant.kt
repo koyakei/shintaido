@@ -1,3 +1,5 @@
+import shintaido.fundamentalBasic.技
+
 /**
  * 物体も含むのでこちらで定義　組み手の定義が下層にあるけどそれはしょうがない
  * 人間同士の組みてに限定しない
@@ -11,4 +13,6 @@ interface KumiteParticipant {
      * 市場参加者は同じ目標を持っているわけじゃないんだけど、自分が操作可能な通貨の　cardinalNumberを任意の値に近づけようとする
      *
      */
+    val 技Set:Set<技>
+    fun handle()
 }
