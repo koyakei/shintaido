@@ -1,0 +1,3 @@
+package shintaido.movePart.verticalPositon
+
+interface 最上段:VerticalPosition

@@ -3,7 +3,7 @@ package shintaido.martialArt.組手.空手
 import KumiteParticipant
 import shintaido.fundamentalBasic.技
 import shintaido.martialArt.単技.attack.punch.不動立ち前進による中段追い突き本突き
-import shintaido.martialArt.単技.recieve.karate.不動立ち前進による正拳下段払い受け
+import shintaido.martialArt.単技.recieve.karate.不動立ち前進による下段払い受け
 import shintaido.martialArt.組手.二人組の約束一本組手
 
 /**
@@ -25,7 +25,7 @@ class 中段突き対下段払いの一本組手(
 
     class 下段払い受け側(override val identifier: KumiteParticipant.Identifier
                             =KumiteParticipant.Identifier(2)
-                            , override val 技Set: Set<技> = setOf(不動立ち前進による正拳下段払い受け()))
+                            , override val 技Set: Set<技> = setOf(不動立ち前進による下段払い受け()))
         : KumiteParticipant{
         override fun handle() {
             技Set.stream().findFirst()
