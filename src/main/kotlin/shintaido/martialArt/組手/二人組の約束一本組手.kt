@@ -1,11 +1,7 @@
 package shintaido.martialArt.組手
 
 import KumiteParticipant
-import shintaido.fundamentalBasic.技
-import shintaido.martialArt.単技.単技
-import shintaido.martialArt.武道の技
-import shintaido.movePart.攻防.relativeSpeed.受け技
-import shintaido.movePart.攻防.攻撃技
+import shintaido.martialArt.攻撃技
 
 /**
  * 参加者を割り当てて、それぞれが技を出すようにしなきゃだめなんだろうなぁ

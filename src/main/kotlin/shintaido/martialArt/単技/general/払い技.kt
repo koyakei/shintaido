@@ -5,9 +5,6 @@ import shintaido.martialArt.種目別の技.技を出す台の移動以外の技
 import shintaido.movePart.攻防.刃の向き.持ち手の向き
 import shintaido.movePart.攻防.刃の向き.順刃
 import shintaido.movePart.攻防.動きの向き.刃筋の通り度合い
-import shintaido.movePart.攻防.米字切込切り払い.上段切り払い
-import shintaido.movePart.攻防.米字切込切り払い.米字切り
-import shintaido.movePart.攻防.防御技
 
 interface 払い技 :  技を出す台の移動以外の技の要素 {
     override val 持ち手の向き: 持ち手の向き

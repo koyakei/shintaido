@@ -1,4 +1,4 @@
-package shintaido.movePart.攻防
+package shintaido.martialArt
 
 import shintaido.fundamentalBasic.技
 

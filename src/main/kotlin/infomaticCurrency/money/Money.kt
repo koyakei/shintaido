@@ -12,7 +12,7 @@ interface Money : 通貨性 {
     /**
      * お金には数値比較による交換市場があるという表現
      */
-    val ruleForExｚchangingMoney: RuleForExchangingPropertyMoney
+    val ruleForExchangingMoney: RuleForExchangingPropertyMoney
 
     /**
      * お金の創造は創造主しかできない

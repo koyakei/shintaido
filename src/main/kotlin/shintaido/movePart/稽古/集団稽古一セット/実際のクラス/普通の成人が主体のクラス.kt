@@ -1,6 +1,6 @@
 package shintaido.movePart.稽古.集団稽古一セット.実際のクラス
 
-import shintaido.movePart.bodyMudrah.心身開発体操
+import shintaido.movePart.bodyMudrah.bodyDeveloping.心身開発体操
 import shintaido.movePart.稽古.整理体操.整理体操
 import shintaido.movePart.稽古.稽古方法
 import shintaido.movePart.稽古.集団稽古一セット.新体道本科クラス
@@ -10,7 +10,6 @@ import shintaido.礼法.開始礼法
 
 /**
  * 10-70歳が参加
- *
  */
 class 普通の成人が主体のクラス(
     override val 開始の礼法: 開始礼法 = 本科の開始礼法(),

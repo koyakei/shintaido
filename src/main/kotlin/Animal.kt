@@ -1,1 +1,3 @@
-data class Animal(val name: String): KumiteParticipant
+interface Animal: KumiteParticipant{
+    val name: String
+}
