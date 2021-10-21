@@ -35,6 +35,8 @@ interface DynamicStretch: Stretch {
         val dynamicStretch:DynamicStretch
         /**
          * 逆操作もできるように定義
+         * プラスすると、一つの筋についている関節を全部屈曲もしくは伸展方向に伸ばして関節の稼働限界から遠くして筋を伸ばす
+         *
          */
         fun plus(){
             dynamicStretch.jointDislocationPower + 1
