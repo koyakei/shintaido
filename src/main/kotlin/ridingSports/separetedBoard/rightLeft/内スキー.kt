@@ -1,4 +1,4 @@
 package ridingSports.separetedBoard.rightLeft
 
-interface 内スキー {
+interface 内スキー: スキー {
 }

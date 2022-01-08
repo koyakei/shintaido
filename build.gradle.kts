@@ -12,6 +12,9 @@ repositories {
 }
 
 dependencies {
+    implementation("org.nd4j:nd4j:0.9.1")
+    implementation("org.nd4j:nd4j-native:0.9.1")
+    implementation("org.nd4j:nd4j-scala-api:0.0.3.5.5.5")
     testImplementation(kotlin("test"))
     implementation(kotlin("stdlib-jdk8"))
 }
