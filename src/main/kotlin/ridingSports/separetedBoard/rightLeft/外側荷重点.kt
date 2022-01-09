@@ -1,8 +1,9 @@
 package ridingSports.separetedBoard.rightLeft
 
+import library.Distance
+import library.Vector
 import library.点
 import org.nd4j.linalg.api.ndarray.INDArray
-
 
 interface 外側荷重点 {
 
@@ -24,10 +25,9 @@ interface 外側荷重点 {
             return 外スキー.位置
         } else{
             inSideSkiPressureForce / 外スキー.最大静止荷重.toLong()
-//            val 距離 = 外スキー.位置.matrix() - 内スキー.位置.matrix()
-//            val 外スキーからの荷重点の距離 = 距離 / deckVerticalPressureForce * 外スキー.最大静止荷重.toLong()
-//            val 荷重点 = 外スキー.位置 + 外スキーからの荷重点の距離 TODO: これがやりたい　でもベクトル演算をかんたんにできないみたい。
-            return 外スキー.位置
+            val 位置の差: Vector = 外スキー.位置 - 内スキー.位置
+            val 外スキーからの荷重点の距離: Distance = ((位置の差.distance / deckVerticalPressureForce).toLong() * 外スキー.最大静止荷重.toLong()) as Distance
+            return 外スキー.位置 + (位置の差.normalize() * 外スキーからの荷重点の距離)
         }
 
     }
