@@ -1,0 +1,4 @@
+package communicationRule
+
+interface InformationTransmitting {
+}

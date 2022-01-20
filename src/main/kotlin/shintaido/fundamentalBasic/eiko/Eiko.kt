@@ -12,6 +12,8 @@ interface Eiko: Mudrah ,天{
         @JvmInline
         value class Maximum(val any: Any)
     }
+    // 栄光する
+    fun handle(): Any
 
     /**
      * 遺伝子的に一つのみの方向への集中

@@ -4,7 +4,7 @@ import infomaticCurrency.basic.currencyRepository.CurrencyPropertySaveRequestDTO
 import ridingSports.MobileMachine
 
 interface Snow系乗り物の状態変化 {
-    val snowMobileMachineWIthEdge: SnowMobileMachineWIthEdge
+    val snowMobileMachineWithEdge: SnowMobileMachineWIthEdge
 
     /**
      * 加速度じゃなくて変化したあとの速度を渡そう
