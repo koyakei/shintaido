@@ -1,6 +1,6 @@
 package ridingSports
 
-import library.Power
+import library.Force
 import ridingSports.slope.AccelerationStatus
 import ridingSports.turn.TurnPhase
 import kotlin.math.cos
@@ -25,7 +25,7 @@ interface バランスを取る判断 {
     fun 横への移動速度の調整(speed: Double)
 
     // スキーと体の重心を離す動き
-    fun changeIntervalOfCenterOfMass(power: Power): AccelerationStatus =
+    fun changeIntervalOfCenterOfMass(power: Force): AccelerationStatus =
         accelerationStatus.copy(
             fallLineSpeed = accelerationStatus.fallLineSpeed +
                     (sin(turnPhase.ratio.number.toDouble()) * power.value),
@@ -34,6 +34,6 @@ interface バランスを取る判断 {
         )
 
     // ピッチング角速度の加速
-    fun changePitchingAngleVelocity(power: Power): AccelerationStatus =
+    fun changePitchingAngleVelocity(power: Force): AccelerationStatus =
         accelerationStatus.copy(pitchingRotationRatio = accelerationStatus.pitchingRotationRatio + power.value)
 }

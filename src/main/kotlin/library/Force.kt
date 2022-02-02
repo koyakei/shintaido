@@ -3,6 +3,6 @@ package library
 /**
  * force * time leap
  */
-interface Power {
-    val value: Long
+data class Force(val value: Float) {
+
 }

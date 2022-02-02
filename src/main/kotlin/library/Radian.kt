@@ -1,5 +1,5 @@
 package library
 
-interface Radian {
-    val number:Number
+data class Radian(val number:Number) {
+
 }

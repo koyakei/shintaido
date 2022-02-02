@@ -1,9 +1,10 @@
 package ridingSports.separetedBoard.rightLeft
 
 import library.点
+import ridingSports.EdgeAngle
 
 interface スキー {
     val 最大静止荷重: Number
-    val edgeAngle: Number
+    val edgeAngle: EdgeAngle
     val 位置: 点
 }
