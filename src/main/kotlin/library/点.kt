@@ -12,13 +12,13 @@ interface 点 {
     val y: Number
     val z: Number
 
-    infix operator fun minus(点: 点): Vector
+    infix operator fun minus(点: 点): DistanceVector
 //    {
 ////        点.x.toLong() - x.toLong()
 ////        点.y.toLong() - y.toLong()
 ////        点.z.toLong() - z.toLong()
 //    }
-    infix operator fun plus(点: 点): Vector
+    infix operator fun plus(点: 点): DistanceVector
 
-    infix operator fun plus(vector: Vector): 点
+    infix operator fun plus(distanceVector: DistanceVector): 点
 }

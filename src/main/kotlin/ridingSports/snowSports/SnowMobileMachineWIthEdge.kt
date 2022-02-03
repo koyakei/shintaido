@@ -7,5 +7,5 @@ import ridingSports.MobileMachine
  */
 interface SnowMobileMachineWIthEdge: MobileMachine {
     val edgeShape: EdgeShape
-    val edgeContactWithSnow: EdgeContactWithSnow
+    val edgeContactConditionWithSnow: EdgeContactConditionWithSnow
 }

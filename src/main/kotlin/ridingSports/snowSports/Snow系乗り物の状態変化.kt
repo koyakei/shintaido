@@ -11,7 +11,7 @@ interface Snow系乗り物の状態変化 {
      */
     fun 横に押す力で増えるヨーイングの角速度を計算(): MobileMachine.YawAngleVelocity
 //    {
-////        sidewayVelocity * edgeContactWithSnow.centerLateralResistance
+////        sidewayVelocity * edgeContactConditionWithSnow.centerLateralResistance
 //    }
     fun 横に押す力で増える角速度をセット()
 

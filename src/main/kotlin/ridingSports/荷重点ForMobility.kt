@@ -8,7 +8,7 @@ import java.util.*
  * 実態は面として考えないといけないけど　理想は点で考える
  * 面であっても中心を考えたほうがいい。
  */
-interface 荷重点 {
+interface 荷重点ForMobility {
     val 重力Vector: Vector<Number>
     val 遠心力Vector: Vector<Number>
     val 接雪面Vector: 平面
