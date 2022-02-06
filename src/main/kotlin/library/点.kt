@@ -21,4 +21,5 @@ interface 点 {
     infix operator fun plus(点: 点): DistanceVector
 
     infix operator fun plus(distanceVector: DistanceVector): 点
+    operator fun plus(vector: Vector): 点
 }

@@ -1,0 +1,3 @@
+package ridingSports.relativeDirection
+
+data class IdealSlopeRelativeDirection(val upOrDownInFallLine: UpOrDownInFallLine,val inOutOfFallLine: InOutOfFallLine)

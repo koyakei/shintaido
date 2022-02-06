@@ -1,15 +1,14 @@
 package ridingSports.snowSports
 
-import infomaticCurrency.basic.currencyRepository.CurrencyPropertySaveRequestDTO
-import ridingSports.MobileMachine
+import ridingSports.MobileMachineCondition
 
 interface Snow系乗り物の状態変化 {
-    val snowMobileMachineWithEdge: SnowMobileMachineWIthEdge
+    val snowMobileMachineWithEdge: SnowMobileMachineConditionWIthEdge
 
     /**
      * 加速度じゃなくて変化したあとの速度を渡そう
      */
-    fun 横に押す力で増えるヨーイングの角速度を計算(): MobileMachine.YawAngleVelocity
+    fun 横に押す力で増えるヨーイングの角速度を計算(): MobileMachineCondition.YawAngleVelocity
 //    {
 ////        sidewayVelocity * edgeContactConditionWithSnow.centerLateralResistance
 //    }

@@ -3,7 +3,7 @@ package ridingSports
 /**
  * 加速度
  */
-interface MobileMachine {
+interface MobileMachineCondition {
     var rollDegree: Float
     var pitchDegree: Float
     var yawDegree: Float

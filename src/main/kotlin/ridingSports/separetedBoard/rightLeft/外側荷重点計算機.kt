@@ -2,10 +2,13 @@ package ridingSports.separetedBoard.rightLeft
 
 import library.Distance
 import library.DistanceVector
+import library.Force
 import library.点
 import org.nd4j.linalg.api.ndarray.INDArray
+import ridingSports.snowSports.SkiRidersAttitude
+import ridingSports.snowSports.SnowCondition
 
-interface 外側荷重点 {
+interface 外側荷重点計算機 {
 
     operator fun INDArray.plus(other: INDArray): INDArray = this.add(other)
     operator fun INDArray.minus(other: INDArray): INDArray = this.sub(other)
@@ -17,9 +20,7 @@ interface 外側荷重点 {
     val 内スキー: 内スキー
     val 外スキー: 外スキー
     val deckVerticalPressureForce: Number
-    @JvmInline
-    value class Force(val number: Number)
-    fun handle(force: Force): 点{
+    fun handle(ridersAttitude: SkiRidersAttitude, snowCondition: SnowCondition): 点{
         val inSideSkiPressureForce =
             deckVerticalPressureForce.toLong()  - 外スキー.最大静止荷重.toLong()
         return if (inSideSkiPressureForce < 0){
@@ -29,6 +30,5 @@ interface 外側荷重点 {
             val 外スキーからの荷重点の距離: Distance = ((位置の差.distance / deckVerticalPressureForce).toLong() * 外スキー.最大静止荷重.toLong()) as Distance
             外スキー.位置 + (位置の差.normalize() * 外スキーからの荷重点の距離)
         }
-
     }
 }

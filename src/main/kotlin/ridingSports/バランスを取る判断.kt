@@ -1,7 +1,7 @@
 package ridingSports
 
 import library.Force
-import ridingSports.slope.AccelerationStatus
+import ridingSports.downHillSlope.AccelerationStatus
 import ridingSports.turn.TurnPhase
 import kotlin.math.cos
 import kotlin.math.sin

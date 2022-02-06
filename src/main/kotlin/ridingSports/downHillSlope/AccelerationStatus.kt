@@ -1,4 +1,4 @@
-package ridingSports.slope
+package ridingSports.downHillSlope
 
 data class AccelerationStatus(
     val fallLineSpeed: Double,

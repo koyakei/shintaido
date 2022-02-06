@@ -1,11 +1,11 @@
 package ridingSports.snowSports
 
-import ridingSports.MobileMachine
+import ridingSports.MobileMachineCondition
 
 /**
  * エッジの形状とエッジの雪面コンタクト
  */
-interface SnowMobileMachineWIthEdge: MobileMachine {
+interface SnowMobileMachineConditionWIthEdge: MobileMachineCondition {
     val edgeShape: EdgeShape
     val edgeContactConditionWithSnow: EdgeContactConditionWithSnow
 }

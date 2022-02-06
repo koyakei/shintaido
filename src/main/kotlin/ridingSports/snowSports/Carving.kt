@@ -1,20 +1,20 @@
 package ridingSports.snowSports
 
-import ridingSports.MobileMachine
+import ridingSports.MobileMachineCondition
 
 /**
  * カービング時の曲がり方を書いていくか
  * トップとテールが広くて、ウェストが狭く　エッジがついていて、ズレがないターンを考える。
  */
 interface Carving {
-    val mobileMachine: MobileMachine
+    val mobileMachineCondition: MobileMachineCondition
 
 
     /**
      * ロール角を増やすとターンする
      */
     fun plusRoll() {
-        mobileMachine.rollDegree++
+        mobileMachineCondition.rollDegree++
 
     }
 
