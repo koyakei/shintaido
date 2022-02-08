@@ -1,6 +1,6 @@
 package ridingSports.snowSports
 
-import ridingSports.MobileMachineCondition
+import ridingSports.mobilityMachine.MobileMachineCondition
 
 interface Snow系乗り物の状態変化 {
     val snowMobileMachineWithEdge: SnowMobileMachineConditionWIthEdge

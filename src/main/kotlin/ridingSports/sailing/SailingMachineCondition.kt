@@ -1,6 +1,6 @@
 package ridingSports.sailing
 
-import ridingSports.MobileMachineCondition
+import ridingSports.mobilityMachine.MobileMachineCondition
 
 interface SailingMachineCondition : MobileMachineCondition {
 }

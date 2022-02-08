@@ -11,10 +11,10 @@ import ridingSports.turn.TurnPhase
 interface IdealRelativeCenterOfMassPositionInSkating {
     val turnPhase: TurnPhase
     fun handle(): IdealSlopeRelativeDirection {
-        if (turnPhase.ratio.number.toFloat() < 50) {
-            return IdealSlopeRelativeDirection(UpSide(), OutsideOfFallLine())
+        return if (turnPhase.ratio.number.toFloat() < 50) {
+            IdealSlopeRelativeDirection(UpSide(), OutsideOfFallLine())
         } else {
-            return IdealSlopeRelativeDirection(DownSide(), InsideOfFallLine())
+            IdealSlopeRelativeDirection(DownSide(), InsideOfFallLine())
         }
     }
 

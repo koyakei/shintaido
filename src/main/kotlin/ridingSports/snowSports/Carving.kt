@@ -1,6 +1,6 @@
 package ridingSports.snowSports
 
-import ridingSports.MobileMachineCondition
+import ridingSports.mobilityMachine.MobileMachineCondition
 
 /**
  * カービング時の曲がり方を書いていくか

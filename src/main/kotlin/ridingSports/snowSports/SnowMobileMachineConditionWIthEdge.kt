@@ -1,6 +1,6 @@
 package ridingSports.snowSports
 
-import ridingSports.MobileMachineCondition
+import ridingSports.mobilityMachine.MobileMachineCondition
 
 /**
  * エッジの形状とエッジの雪面コンタクト

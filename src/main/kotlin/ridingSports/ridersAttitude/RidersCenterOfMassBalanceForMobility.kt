@@ -1,4 +1,4 @@
-package ridingSports
+package ridingSports.ridersAttitude
 
 import library.平面
 import library.点

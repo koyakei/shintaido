@@ -1,4 +1,0 @@
-package ridingSports
-
-interface Road {
-}

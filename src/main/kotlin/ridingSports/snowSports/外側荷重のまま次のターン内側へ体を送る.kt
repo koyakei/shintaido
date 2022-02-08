@@ -2,7 +2,7 @@ package ridingSports.snowSports
 
 import library.点
 import ridingSports.CenterOfMass
-import ridingSports.turn.InTurnThrustCenterOfMassMobilityForward
+import ridingSports.turn.InTurnThrustRidersCenterOfMassMobilityForward
 import ridingSports.turn.TurnPhase
 
 /**
@@ -16,7 +16,7 @@ interface 外側荷重のまま次のターン内側へ体を送る {
      * 次のターンに縦方向だけに重心を送ってターンする
      */
     fun handle(){
-        InTurnThrustCenterOfMassMobilityForward(turnPhase).handle(idealNextTurnCenterOfMass)
+        InTurnThrustRidersCenterOfMassMobilityForward(turnPhase).handle(idealNextTurnCenterOfMass)
     }
     val centerOfMass:CenterOfMass
     // 前後方向に運動して次のターンに行くのか？　横の引き起こしなのかが問題

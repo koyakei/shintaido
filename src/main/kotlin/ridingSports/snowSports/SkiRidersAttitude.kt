@@ -3,7 +3,7 @@ package ridingSports.snowSports
 import library.Direction
 import library.点
 import library.点Range
-import ridingSports.RidersAttitude
+import ridingSports.ridersAttitude.RidersAttitude
 
 
 interface SkiRidersAttitude: RidersAttitude {

@@ -1,7 +1,7 @@
 package ridingSports.balance
 
 import library.Force
-import ridingSports.EdgeAngle
+import ridingSports.mobilityMachine.EdgeAngle
 
 interface CrossOverBalance {
     val hightOfCenterOfMass: Number

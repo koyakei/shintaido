@@ -1,4 +1,6 @@
-package ridingSports
+package ridingSports.mobilityMachine
+
+import library.Force
 
 /**
  * 加速度
@@ -12,11 +14,14 @@ interface MobileMachineCondition {
     val pitchAngleVelocity: Float
     val pitchAngleAcceleration: Float
     val yawAngleVelocity: YawAngleVelocity
+    val mobilityMachineDownForceInPumpingTrack: MobilityMachineDownForceInPumpingTrack
     @JvmInline
     value class YawAngleVelocity(val float: Float)
     val yawAngleAcceleration: YawAngleAcceleration
     @JvmInline
     value class YawAngleAcceleration(val float: Float)
+
+    fun getDownForce(): Force
 
     /**
      * plus forward

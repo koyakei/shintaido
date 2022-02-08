@@ -1,6 +1,6 @@
 package ridingSports.snowSports
 
-import ridingSports.RidersCenterOfMassBalanceForMobility
+import ridingSports.ridersAttitude.RidersCenterOfMassBalanceForMobility
 import ridingSports.separetedBoard.rightLeft.外側荷重点計算機
 import ridingSports.downHillSlope.最大横Gを得るターン弧を描くためのフォールラインに対しての相対角度を計算
 import ridingSports.turn.Turn
@@ -17,7 +17,7 @@ import ridingSports.turn.TurnPhase
 class SkiTurn(
     val 最大横Gを得るターン弧を描くためのフォールラインに対しての相対角度を計算:
     最大横Gを得るターン弧を描くためのフォールラインに対しての相対角度を計算
-    ,val skiRidersAttitude: SkiRidersAttitude,
+    , val skiRidersAttitude: SkiRidersAttitude,
     val snowCondition: SnowCondition,
     val ridersCenterOfMassBalanceForMobility: RidersCenterOfMassBalanceForMobility,
     val 外側荷重点計算機: 外側荷重点計算機,

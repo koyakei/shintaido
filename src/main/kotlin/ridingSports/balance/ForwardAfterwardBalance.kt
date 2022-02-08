@@ -1,4 +1,4 @@
-package ridingSports
+package ridingSports.balance
 
 import library.DistanceVector
 import library.Vector

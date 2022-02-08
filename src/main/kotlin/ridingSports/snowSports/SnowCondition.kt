@@ -1,6 +1,6 @@
 package ridingSports.snowSports
 
-import ridingSports.Road
+import ridingSports.roadCondition.RoadCondition
 
-interface SnowCondition: Road {
+interface SnowCondition: RoadCondition {
 }
