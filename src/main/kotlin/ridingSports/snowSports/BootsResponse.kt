@@ -1,7 +1,6 @@
 package ridingSports.snowSports
 
 import library.BootsFlex
-import library.Force
 
 interface BootsResponse {
     data class FootFlex(val number: Number)
