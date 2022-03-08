@@ -1,0 +1,5 @@
+package ridingSports
+
+interface MobileMachine {
+
+}
