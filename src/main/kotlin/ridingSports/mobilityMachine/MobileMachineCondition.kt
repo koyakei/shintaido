@@ -15,18 +15,25 @@ interface MobileMachineCondition {
     val pitchAngleAcceleration: Float
     val yawAngleVelocity: YawAngleVelocity
     val mobilityMachineDownForceInPumpingTrack: MobilityMachineDownForceInPumpingTrack
+    val 支持基底面Width: Float
     @JvmInline
     value class YawAngleVelocity(val float: Float)
+
     val yawAngleAcceleration: YawAngleAcceleration
+
     @JvmInline
     value class YawAngleAcceleration(val float: Float)
 
-    fun getDownForce(): Force
+    val getDownForce: Force
+
+
+
+
 
     /**
      * plus forward
      */
-    val forwardVelocity:Float
+    val forwardVelocity: Float
 
     /**
      * plus right
