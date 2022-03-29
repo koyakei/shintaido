@@ -4,7 +4,7 @@ import library.DistanceVector
 import library.Vector
 import library.点
 
-interface ForwardAfterwardBalance {
+interface ForwardAfterwardBalanceIdealCenterOfMassFinder {
     val 体の動きDistanceVector: DistanceVector
     val skiの動きDistanceVector: DistanceVector
     // 重力方向と慣性の合力ベクトル

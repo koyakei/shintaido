@@ -8,7 +8,9 @@ import AchieveFlow
  */
 interface PumpingInPumpingTrack : AchieveFlow{
     override val currentStatus: PumpingTrackCurrentStatus
-    override val goal: PumpingTrackGoal
-    override val goalGetter: ThrustForwardGoalGetter
+    override val goal: ForwardBackwardGoal
+    override fun handle() {
+        achievingGoal.handle()
+    }
 
 }

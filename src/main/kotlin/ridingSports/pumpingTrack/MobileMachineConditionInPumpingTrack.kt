@@ -1,0 +1,8 @@
+package ridingSports.pumpingTrack
+
+import ridingSports.mobilityMachine.MobileMachineCondition
+import ridingSports.mobilityMachine.MobilityMachineDownForceInPumpingTrack
+
+interface MobileMachineConditionInPumpingTrack : MobileMachineCondition{
+    val mobilityMachineDownForceInPumpingTrack: MobilityMachineDownForceInPumpingTrack
+}

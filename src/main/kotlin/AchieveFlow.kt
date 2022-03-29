@@ -1,6 +1,6 @@
 interface AchieveFlow {
     val currentStatus: CurrentStatus
     val goal: Goal
-    val goalGetter: GoalGetter
+    val achievingGoal: AchievingGoal
     fun handle()
 }

@@ -1,19 +1,16 @@
 package ridingSports.ski.alpineSki
 
-import ridingSports.RidersAbility
 import ridingSports.balance.復元力を高くする
-import ridingSports.snowSports.SnowSportsMobileMachine
+import ridingSports.ski.SkiMobileMachine
 import ridingSports.snowSports.SnowSportsRidersAbility
 import ridingSports.snowSports.少なく不正確な加重移動でヨーイング角速度を大きくする
-import ridingSports.snowSports.逆エッジ.逆エッジのリスクの計算
 import ridingSports.snowSports.逆エッジ.道具が交換できない場合の逆エッジのリスク計算
 
 interface 初心者でも曲がりたい {
     val 復元力を高くする: 復元力を高くする
     val 道具が交換できない場合の逆エッジのリスク計算: 道具が交換できない場合の逆エッジのリスク計算
-    val snowSportsMobileMachine: SnowSportsMobileMachine
+    val skiMobileMachine: SkiMobileMachine
     val 少なく不正確な加重移動でヨーイング角速度を大きくする: 少なく不正確な加重移動でヨーイング角速度を大きくする
-
 
     interface スキー初心者: SnowSportsRidersAbility {
         /**
@@ -36,15 +33,15 @@ interface 初心者でも曲がりたい {
      * どのような乗り物の動きが理想なのかを返す関数がほしい。
      *
      */
-
     fun handle(){
         復元力を高くする.handle()
         //次のターンに入ったときに角付けがされているように予め用意しておくために、支持基底面を広げるだけではなく、
         // Aフレームが出るような姿勢を取るべきだと計算結果を示せていない。時系列的変化のための準備をどのように表迂言するのか？
         少なく不正確な加重移動でヨーイング角速度を大きくする.handle()
-        -道具が交換できない場合の逆エッジのリスク計算.riskOf逆エッジ // これの戻り値にエッジアングルの増大もしくは　板の幅の増大を得たい。板の幅を変えない場合は
+        -道具が交換できない場合の逆エッジのリスク計算.riskOf逆エッジ
+        // これの戻り値にエッジアングルの増大もしくは　板の幅の増大を得たい。板の幅を変えない場合は
+        // 速度を遅くする
+        skiMobileMachine.プルークスタンス.inc()
         // エッジアングルの増大のみを返したい。
-        //
-
     }
 }
