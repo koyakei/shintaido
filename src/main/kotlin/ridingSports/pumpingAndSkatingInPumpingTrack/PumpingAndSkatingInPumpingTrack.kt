@@ -11,13 +11,11 @@ interface PumpingAndSkatingInPumpingTrack : AchievingGoal {
     override val goal: ForwardBackwardGoal
 
     /**
-     * 関数を返したいなぁ
+     * 関数を返したいなぁ やめとこ
      */
     override fun handle() {
         // イベントに順序ができてしまっている。順序によらない実行をここで担保する
         thrustableInPumpingTrack.handle()
         skatable.handle()
     }
-
-
 }

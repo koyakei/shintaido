@@ -1,0 +1,11 @@
+package ridingSports.carving
+
+import ridingSports.byFeetThrust.MobileMachineWalkable
+import ridingSports.mobilityMachine.MobileMachineCondition
+import ridingSports.mobilityMachine.MobilityMachineDownForceInPumpingTrack
+import ridingSports.snowSports.CarvingMobileMachineEdgeable
+interface CarvingMobileMachineCondition: MobileMachineCarvable, MobileMachineCondition , CarvingMobileMachineEdgeable,
+MobileMachineWalkable{
+    val mobilityMachineDownForceInPumpingTrack: MobilityMachineDownForceInPumpingTrack
+}
+

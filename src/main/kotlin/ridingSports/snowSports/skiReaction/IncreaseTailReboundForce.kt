@@ -3,7 +3,7 @@ package ridingSports.snowSports.skiReaction
 import library.Force
 
 /**
- * トップの返るパワーを増やす
+ * テールの返るパワーを増やす
  */
 interface IncreaseTailReboundForce {
     val しならせる余地: Any

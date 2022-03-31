@@ -1,7 +1,5 @@
 package ridingSports.pumpingTrack
 
-import ridingSports.ridersAttitude.RidersAttitude
-
 interface ThrustableInPumpingTrack {
     val goal: ForwardBackwardGoal
     val pumpingTrackCondition: PumpingTrackCondition

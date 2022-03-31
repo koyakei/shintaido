@@ -8,9 +8,6 @@ interface IncreaseEdgeGrip {
     val skiTipShape: SkiTipShape
 
     val edgeContactConditionWithSnow: EdgeContactConditionWithSnow
-    class SnowWallCondition(val hight: Distance){
-
-    }
 
     /**
      * snowWallCondition + edgeContactConditionWithSnow

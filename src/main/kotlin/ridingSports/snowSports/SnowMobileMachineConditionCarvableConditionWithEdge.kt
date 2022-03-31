@@ -1,14 +1,17 @@
 package ridingSports.snowSports
 
 import library.Force
+import library.Radian
+import ridingSports.carving.CarvingMobileMachineCondition
+import ridingSports.carving.MobileMachineCarvable
 import ridingSports.mobilityMachine.MobileMachineCondition
 import ridingSports.mobilityMachine.MobilityMachineDownForceInPumpingTrack
 
 /**
  * エッジの形状とエッジの雪面コンタクト
  */
-data class SnowMobileMachineConditionWithEdge(
-    override var rollDegree: Float,
+data class SnowMobileMachineConditionCarvableConditionWithEdge(
+    override var rollDegree: Radian,
     override var pitchDegree: Float,
     override var yawDegree: Float,
     override val rollAngleVelocity: Float,
@@ -21,15 +24,14 @@ data class SnowMobileMachineConditionWithEdge(
     override val forwardVelocity: Float,
     override val sidewayVelocity: Float,
     override val hightVelocity: Float,
-    val edgeShape: EdgeShape,
-    val edgeContactConditionWithSnow: EdgeContactConditionWithSnow,
+    override val edgeShape: EdgeShape,
+    override val edgeContactConditionWithSnow: EdgeContactConditionWithSnow,
     override val 支持基底面Width: Float,
     override val getDownForce: Force,
-
-    ) : MobileMachineCondition {
-
-
-
+    override val sideCutRadius: MobileMachineCarvable.SideCutRadius,
+    override val flexBending: MobileMachineCarvable.FlexBending,
+    override val torsionBending: MobileMachineCarvable.TorsionBending,
+    ) : CarvingMobileMachineCondition {
 
 
 }

@@ -1,12 +1,13 @@
 package ridingSports.mobilityMachine
 
 import library.Force
+import library.Radian
 
 /**
  * 加速度
  */
 interface MobileMachineCondition {
-    var rollDegree: Float
+    var rollDegree: Radian
     var pitchDegree: Float
     var yawDegree: Float
     val rollAngleVelocity: Float
@@ -15,6 +16,7 @@ interface MobileMachineCondition {
     val pitchAngleAcceleration: Float
     val yawAngleVelocity: YawAngleVelocity
 
+    // 宮中では支持基底面はないので後で分離
     val 支持基底面Width: Float
     @JvmInline
     value class YawAngleVelocity(val float: Float)
@@ -25,10 +27,6 @@ interface MobileMachineCondition {
     value class YawAngleAcceleration(val float: Float)
 
     val getDownForce: Force
-
-
-
-
 
     /**
      * plus forward

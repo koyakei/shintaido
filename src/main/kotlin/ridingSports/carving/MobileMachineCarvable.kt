@@ -1,6 +1,8 @@
-package ridingSports.snowSports
+package ridingSports.carving
 
-interface CarvingMobileMachine {
+import library.Radian
+
+interface MobileMachineCarvable {
 
     @JvmInline
     value class SideCutRadius(val float: Float)
@@ -8,12 +10,14 @@ interface CarvingMobileMachine {
      * 剛体だとして、サイドカット
      */
     val sideCutRadius: SideCutRadius
+
     /**
      * サイドカットではない弾性体を変形させて得られるラディウス
      */
-    fun elasticBodyRadius(sideCutRadius: SideCutRadius,
-    torsionBending: TorsionBending,
-    flexBending: FlexBending): Float
+    fun elasticBodyRadius(rollDegree: Radian): Radian{
+        return Radian(
+            sideCutRadius.float * rollDegree.number.toFloat())
+    }
 
     /**
      * 変形した板の状態

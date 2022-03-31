@@ -17,6 +17,12 @@ interface RidersAttitude {
         val contactForceToPiste: Force
         operator fun unaryPlus(): 支持基底Condition
 
+        /**
+         * 得たいエッジグリップ force を入力
+         * 得られるforce がかえる
+         */
+        fun incForGetGripToRoad(demandedForce: Force): 支持基底Condition
+
         operator fun unaryMinus(): 支持基底Condition
 
     }
