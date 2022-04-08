@@ -1,6 +1,6 @@
 package ridingSports.snowboard
 
-import library.Distance
+import library.Length
 import library.Force
 import library.Mass
 import library.Radian
@@ -22,7 +22,7 @@ interface 縦の重心移動 {
     val ankleAngleFlexibleRange: AnkleAngleFlexibleRange
     val torsoAngleFlexibleRange: TorsoAngleFlexibleRange
 
-    fun movingRangeOfCenterOfMass(torsoAngleFlexibleRange: TorsoAngleFlexibleRange): Distance
+    fun movingRangeOfCenterOfMass(torsoAngleFlexibleRange: TorsoAngleFlexibleRange): Length
 
     @JvmInline
     value class DemandedAnkleManipulateAngle(val radian: Radian)

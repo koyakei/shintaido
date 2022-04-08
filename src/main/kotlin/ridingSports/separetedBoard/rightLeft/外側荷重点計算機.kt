@@ -1,8 +1,7 @@
 package ridingSports.separetedBoard.rightLeft
 
-import library.Distance
+import library.Length
 import library.DistanceVector
-import library.Force
 import library.点
 import org.nd4j.linalg.api.ndarray.INDArray
 import ridingSports.snowSports.SkiRidersAttitude
@@ -27,7 +26,7 @@ interface 外側荷重点計算機 {
             外スキー.位置
         } else{
             val 位置の差: DistanceVector = 外スキー.位置 - 内スキー.位置
-            val 外スキーからの荷重点の距離: Distance = ((位置の差.distance / deckVerticalPressureForce).toLong() * 外スキー.最大静止荷重.toLong()) as Distance
+            val 外スキーからの荷重点の距離: Length = ((位置の差.length / deckVerticalPressureForce).toLong() * 外スキー.最大静止荷重.toLong()) as Length
             外スキー.位置 + (位置の差.normalize() * 外スキーからの荷重点の距離)
         }
     }

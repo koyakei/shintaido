@@ -1,6 +1,5 @@
 package ridingSports.snowSports
 
-import library.Distance
 import library.Force
 
 interface IncreaseEdgeGrip {
@@ -25,7 +24,7 @@ interface IncreaseEdgeGrip {
      * 増やしたければ
      */
     fun plus(edgeContactConditionWithSnow: EdgeContactConditionWithSnow){
-        val diff = snowWallCondition.bestGripHight.distance.toFloat() - snowWallCondition.currentHight.distance.toFloat()
+        val diff = snowWallCondition.bestGripHight.length.toFloat() - snowWallCondition.currentHight.length.toFloat()
         if (diff < 0){
             edgeContactConditionWithSnow.moreTipContact()
         } else if (diff > 0){

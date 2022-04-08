@@ -1,10 +1,10 @@
 package ridingSports.snowSports.逆エッジ
 
-import library.Distance
+import library.Length
 import ridingSports.snowSports.SnowCondition
 
 interface 逆エッジのリスクの計算 {
-    val edgeDistanceBetweenSnow: Distance
+    val edgeLengthBetweenSnow: Length
     val snowCondition: SnowCondition
     data class 逆エッジのリスク(val riscOf逆エッジ: Float){
         operator fun unaryMinus(): 逆エッジのリスク {
@@ -17,6 +17,6 @@ interface 逆エッジのリスクの計算 {
     val riskOf逆エッジ: 逆エッジのリスク
         get() =
         逆エッジのリスク(
-            edgeDistanceBetweenSnow.distance.toFloat()
+            edgeLengthBetweenSnow.length.toFloat()
                     * snowCondition.counterEdgeRiskFactor.toFloat())
 }

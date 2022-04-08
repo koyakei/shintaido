@@ -13,7 +13,7 @@ interface PumpingAndSkatingInPumpingTrack : AchievingGoal {
     /**
      * 関数を返したいなぁ やめとこ
      */
-    override fun handle() {
+    override fun handle():Unit {
         // イベントに順序ができてしまっている。順序によらない実行をここで担保する
         thrustableInPumpingTrack.handle()
         skatable.handle()

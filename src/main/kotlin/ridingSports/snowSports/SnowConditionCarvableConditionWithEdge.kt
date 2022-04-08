@@ -2,7 +2,7 @@ package ridingSports.snowSports
 
 import library.Force
 import library.Radian
-import ridingSports.carving.CarvingMobileMachineCondition
+import ridingSports.carving.CarvingCondition
 import ridingSports.carving.MobileMachineCarvable
 import ridingSports.mobilityMachine.MobileMachineCondition
 import ridingSports.mobilityMachine.MobilityMachineDownForceInPumpingTrack
@@ -10,7 +10,7 @@ import ridingSports.mobilityMachine.MobilityMachineDownForceInPumpingTrack
 /**
  * エッジの形状とエッジの雪面コンタクト
  */
-data class SnowMobileMachineConditionCarvableConditionWithEdge(
+data class SnowConditionCarvableConditionWithEdge(
     override var rollDegree: Radian,
     override var pitchDegree: Float,
     override var yawDegree: Float,
@@ -31,7 +31,7 @@ data class SnowMobileMachineConditionCarvableConditionWithEdge(
     override val sideCutRadius: MobileMachineCarvable.SideCutRadius,
     override val flexBending: MobileMachineCarvable.FlexBending,
     override val torsionBending: MobileMachineCarvable.TorsionBending,
-    ) : CarvingMobileMachineCondition {
+    ) : CarvingCondition {
 
 
 }

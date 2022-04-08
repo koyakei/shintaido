@@ -1,8 +1,11 @@
 package ridingSports.snowSports
 
+import library.Length
 import ridingSports.MobileMachine
 
 interface SnowSportsMobileMachine: MobileMachine {
-    val edgeEffectiveLength: Number
-    val waistWidth: Number
+    val edgeShape: EdgeShape
+
+
+
 }

@@ -1,6 +1,6 @@
 package ridingSports.ridersAttitude
 
-import library.Distance
+import library.Length
 import library.Force
 import ridingSports.mobilityMachine.支持基底Condition
 
@@ -12,7 +12,7 @@ interface RidersAttitude {
     val ridersCenterOfMassBalanceForMobility: RidersCenterOfMassBalanceForMobility
 
     interface BodyCenterOfMassHightBetween支持基底点{
-        val distance: Distance
+        val length: Length
         val minimum降伏Force: Force
         val contactForceToPiste: Force
         operator fun unaryPlus(): 支持基底Condition

@@ -7,7 +7,7 @@ package ridingSports.snowSports
  *
  */
 interface 少なく不正確な加重移動でヨーイング角速度を大きくする {
-    val snowMobileMachineConditionWithEdge: SnowMobileMachineConditionCarvableConditionWithEdge
+    val snowMobileMachineConditionWithEdge: SnowConditionCarvableConditionWithEdge
     /**
      * ラムダを返す
      * MobileMachineConditionのロールアングルを増やす

@@ -2,10 +2,7 @@ package ridingSports.downHillSlope
 
 import library.Force
 import library.Radian
-import ridingSports.byFeetThrust.MobileMachineWalkable
-import ridingSports.byFeetThrust.WalkingMobileMachineCondition
-import ridingSports.carving.CarvingMobileMachineCondition
-import ridingSports.pumpingTrack.ForwardBackwardGoal
+import ridingSports.byFeetThrust.Walkable
 import ridingSports.ridersAttitude.RidersAttitude
 
 /**
@@ -18,14 +15,14 @@ import ridingSports.ridersAttitude.RidersAttitude
  * 平面でのポンピングを先にかんがえるか。
  * エッジグリップがたりないターン後半に立ち上がってエッジグリップを増すことを
  */
-interface ContinuousTurnableInDownhillSlope : MobileMachineWalkable {
-    val roadCondition: DownHillSlopeCondition
+interface ContinuousTurnableInDownhillSlope : Walkable {
+    val roadCondition: DownhillSlopeMachineCondition
     val ridersAttitude: RidersAttitude
 
     override fun handle() {
         super.handle()
         // 重力方向と進行方向のなす角度を算出
-        val angle: Radian = roadCondition.angleBetweenGravityAndForward()
+        val angle: Radian = roadCondition.angleBetweenFallLineAndForward
 
         // 必要なエッジグリップを要求
         val edgeGrip =gripToRoad.maintainGripForThrust(demandedEdgeGripForce(angle))

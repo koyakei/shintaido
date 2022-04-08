@@ -19,19 +19,4 @@ interface MobileMachineCarvable {
             sideCutRadius.float * rollDegree.number.toFloat())
     }
 
-    /**
-     * 変形した板の状態
-     * 縦方向の反り
-     */
-    val flexBending: FlexBending
-
-    @JvmInline
-    value class FlexBending(val float: Float)
-    /**
-     * 変形した板の状態
-     * ねじれ方向の反り
-     */
-    val torsionBending: TorsionBending
-    @JvmInline
-    value class TorsionBending(val float: Float)
 }

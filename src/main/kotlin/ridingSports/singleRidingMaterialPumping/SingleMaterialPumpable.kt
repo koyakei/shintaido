@@ -1,9 +1,8 @@
 package ridingSports.singleRidingMaterialPumping
 
-import ridingSports.byFeetThrust.MobileMachineWalkable
-import ridingSports.byFeetThrust.WalkingMobileMachineCondition
+import ridingSports.byFeetThrust.ThrustableLeg
 import ridingSports.byFeetThrust.WalkingTrackCondition
-import ridingSports.byFeetThrust.skating.SkatingMobileMachineCondition
+import ridingSports.byFeetThrust.skating.SkatingCondition
 import ridingSports.pumpingTrack.ForwardBackwardGoal
 import ridingSports.ridersAttitude.RidersAttitude
 
@@ -21,7 +20,7 @@ import ridingSports.ridersAttitude.RidersAttitude
 interface SingleMaterialPumpable {
     val goal: ForwardBackwardGoal
     val roadCondition: WalkingTrackCondition
-    val mobileMachineCondition: SkatingMobileMachineCondition
+    val mobileMachineCondition: SkatingCondition
     val ridersAttitude: RidersAttitude
     fun handle() {
         mobileMachineCondition.gripToRoad
@@ -35,17 +34,17 @@ interface SingleMaterialPumpable {
         // 余地がなくなったら一番縮める
         // ダブルプッシュと矛盾がない？
         // ダブルプッシュはインラインでしかやらないのか？
-        if (mobileMachineCondition.walkableLeg.footPosition.side
-            != MobileMachineWalkable.WalkableLeg.FootPosition.Side.OutsideMax
-            || mobileMachineCondition.walkableLeg.footPosition.forwardBackward !=
-            MobileMachineWalkable.WalkableLeg.FootPosition.ForwardBackward.BackwardMax
+        if (mobileMachineCondition.thrustableLeg.footPosition.side
+            != ThrustableLeg.FootPosition.Side.OutsideMax
+            || mobileMachineCondition.thrustableLeg.footPosition.forwardBackward !=
+            ThrustableLeg.FootPosition.ForwardBackward.BackwardMax
         ){
             //途中で押す方向を変えることはしないとする。
             // 計画通りに押さないと大変なので変化させない
             // 伸ばす方向は後ろかつ外側 3象限　4象限に限るとする。
-            mobileMachineCondition.walkableLeg.extendsLegToMaxLength()
+            mobileMachineCondition.thrustableLeg.thrustToForward()
         }else{
-            mobileMachineCondition.walkableLeg.sidewayShrinkToMin()
+            mobileMachineCondition.thrustableLeg.readyToThrustSidewayPosition()
         }
     }
 }
