@@ -4,6 +4,8 @@ import infomaticCurrency.basic.RuleOfMinimumUnitOfCurrency
 import infomaticCurrency.graphCurrency.GraphCurrency
 import infomaticCurrency.graphCurrency.SingleGraphCurrencyUnit
 import infomaticCurrency.basic.通貨性
+import infomaticCurrency.money.currentizeVariation.ruleForPropertyLifeCycle.RuleForCreateMoney
+import infomaticCurrency.money.currentizeVariation.ruleForPropertyLifeCycle.RuleForDeleteMoney
 import infomaticCurrency.variationOfCurrentize.ruleForFunction.*
 
 /**
@@ -23,8 +25,8 @@ class SampleGraphCurrency(
     override val ruleOfMinimumUnitOfCurrency: RuleOfMinimumUnitOfCurrency,
     override val setSingleInformaticCurrencyUnit: Set<SingleGraphCurrencyUnit> //ここで入れる必要ないんじゃないかな。　たくさんになるし、集約のインターフェイスをぢ杏優しておくか
     ,
-    override val ruleForCreateProperty: RuleForCreateMoneyMoney,
-    override val ruleForDeleteProperty: RuleForDeleteMoneyMoney,
+    override val ruleForCreateProperty: RuleForCreateMoney,
+    override val ruleForDeleteProperty: RuleForDeleteMoney,
     override val ruleForAttach: RuleForAttach,
     override val ruleForDetach: RuleForDetach,
     override val ruleForDelete: RuleForDelete
