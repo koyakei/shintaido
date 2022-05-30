@@ -5,8 +5,6 @@ import infomaticCurrency.graphCurrency.GraphCurrency
 import infomaticCurrency.graphCurrency.SingleGraphCurrencyUnit
 import infomaticCurrency.basic.通貨性
 import infomaticCurrency.variationOfCurrentize.ruleForFunction.*
-import infomaticCurrency.variationOfCurrentize.ruleForPropertyLifeCycle.RuleForCreateMoneyMoney
-import infomaticCurrency.variationOfCurrentize.ruleForPropertyLifeCycle.RuleForDeleteMoneyMoney
 
 /**
  * 自分のタグ系重視の通貨をお金と反対の性質を持つ通貨として設計する

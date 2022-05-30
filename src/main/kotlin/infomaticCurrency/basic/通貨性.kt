@@ -1,8 +1,8 @@
 package infomaticCurrency.basic
 
+import infomaticCurrency.money.currentizeVariation.ruleForPropertyLifeCycle.RuleForCreateMoney
+import infomaticCurrency.money.currentizeVariation.ruleForPropertyLifeCycle.RuleForDeleteMoney
 import infomaticCurrency.variationOfCurrentize.ruleForFunction.*
-import infomaticCurrency.variationOfCurrentize.ruleForPropertyLifeCycle.RuleForCreateMoneyMoney
-import infomaticCurrency.variationOfCurrentize.ruleForPropertyLifeCycle.RuleForDeleteMoneyMoney
 
 /**
  *
@@ -27,9 +27,9 @@ interface 通貨性 {
      *
      */
 
-    val ruleForCreateProperty: RuleForCreateMoneyMoney
+    val ruleForCreateProperty: RuleForCreateMoney
     val ruleForExchangingProperty: RuleForExchangingProperty
-    val ruleForDeleteProperty: RuleForDeleteMoneyMoney
+    val ruleForDeleteProperty: RuleForDeleteMoney
 
     val ruleForCreation: RuleForCreation
     val ruleForAttach: RuleForAttach

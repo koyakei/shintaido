@@ -1,4 +1,4 @@
-package infomaticCurrency.variationOfCurrentize.ruleForPropertyLifeCycle
+package infomaticCurrency.money.currentizeVariation.ruleForPropertyLifeCycle
 
 import infomaticCurrency.money.currentizeVariation.ruleForPropertyLifeCycle.RuleForMoneyLifeCycle
 
