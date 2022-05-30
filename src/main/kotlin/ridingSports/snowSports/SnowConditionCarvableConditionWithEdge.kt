@@ -2,6 +2,8 @@ package ridingSports.snowSports
 
 import library.Force
 import library.Radian
+import ridingSports.byFeetThrust.GripToRoadController
+import ridingSports.byFeetThrust.LimitedLengthLeg
 import ridingSports.carving.CarvingCondition
 import ridingSports.carving.MobileMachineCarvable
 import ridingSports.mobilityMachine.MobileMachineCondition
@@ -29,8 +31,9 @@ data class SnowConditionCarvableConditionWithEdge(
     override val 支持基底面Width: Float,
     override val getDownForce: Force,
     override val sideCutRadius: MobileMachineCarvable.SideCutRadius,
-    override val flexBending: MobileMachineCarvable.FlexBending,
-    override val torsionBending: MobileMachineCarvable.TorsionBending,
+    override val gripToRoadController: GripToRoadController,
+    override val limitedLengthLeg: LimitedLengthLeg,
+    override var isTakingBackPhase: Boolean,
     ) : CarvingCondition {
 
 

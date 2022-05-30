@@ -1,12 +1,12 @@
 package ridingSports.pumpingAndSkatingInPumpingTrack
 
 import AchievingGoal
-import ridingSports.byFeetThrust.skating.Skatable
+import ridingSports.byFeetThrust.skating.SkatableOnLimitedGripRoad
 import ridingSports.pumpingTrack.ForwardBackwardGoal
 import ridingSports.pumpingTrack.ThrustableInPumpingTrack
 
 interface PumpingAndSkatingInPumpingTrack : AchievingGoal {
-    val skatable: Skatable
+    val skatableOnLimitedGripRoad: SkatableOnLimitedGripRoad
     val thrustableInPumpingTrack: ThrustableInPumpingTrack
     override val goal: ForwardBackwardGoal
 
@@ -16,6 +16,6 @@ interface PumpingAndSkatingInPumpingTrack : AchievingGoal {
     override fun handle():Unit {
         // イベントに順序ができてしまっている。順序によらない実行をここで担保する
         thrustableInPumpingTrack.handle()
-        skatable.handle()
+        skatableOnLimitedGripRoad.handle()
     }
 }

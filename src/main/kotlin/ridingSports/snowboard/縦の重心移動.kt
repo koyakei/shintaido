@@ -57,7 +57,7 @@ interface 縦の重心移動 {
      *
      */
     fun boots(force: Force): Force{
-        return Force(force.value.toFloat() * bootsResponse.handle())
+        return Force((force.value.toFloat() * bootsResponse.handle()).toDouble())
     }
 
     val idealVerticalForceForCenterOfMass: Force

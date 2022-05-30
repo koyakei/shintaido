@@ -14,5 +14,6 @@ interface 少なく不正確な加重移動でヨーイング角速度を大き�
      * 返ってきたらラムダを　MobileMachineCondition 変数に適用すると、やるべきことがわかる
      *
      */
-    fun handle() = snowMobileMachineConditionWithEdge.let { it.rollDegree.inc() }
+    fun handle() = snowMobileMachineConditionWithEdge.let { it.rollDegree // 加算
+     }
 }

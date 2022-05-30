@@ -16,7 +16,7 @@ interface MobileMachineCarvable {
      */
     fun elasticBodyRadius(rollDegree: Radian): Radian{
         return Radian(
-            sideCutRadius.float * rollDegree.number.toFloat())
+            (sideCutRadius.float * rollDegree.number.toFloat()).toDouble())
     }
 
 }

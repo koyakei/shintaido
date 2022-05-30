@@ -1,11 +1,11 @@
 package ridingSports.carving
 
-import ridingSports.byFeetThrust.Walkable
+import ridingSports.byFeetThrust.ThrustableOnLimitedGripRoad
 import ridingSports.mobilityMachine.MobileMachineCondition
 import ridingSports.mobilityMachine.MobilityMachineDownForceInPumpingTrack
 import ridingSports.snowSports.CarvingMobileMachineEdgeable
 interface CarvingCondition: MobileMachineCarvable, MobileMachineCondition , CarvingMobileMachineEdgeable,
-Walkable{
+ThrustableOnLimitedGripRoad{
     val mobilityMachineDownForceInPumpingTrack: MobilityMachineDownForceInPumpingTrack
 }
 

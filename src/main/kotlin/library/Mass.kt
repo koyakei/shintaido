@@ -1,3 +1,3 @@
 package library
 
-data class Mass(val number: Number)
+data class Mass(val number: Double)

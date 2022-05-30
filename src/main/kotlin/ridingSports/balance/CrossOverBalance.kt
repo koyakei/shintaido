@@ -9,6 +9,6 @@ interface CrossOverBalance {
     fun recoveryForce(): Force
 
     fun turnDownForce(edgeAngle: EdgeAngle): Force {
-        return Force(hightOfCenterOfMass.toFloat() * edgeAngle.radian.number.toFloat())
+        return Force((hightOfCenterOfMass.toFloat() * edgeAngle.radian.number.toFloat()).toDouble())
     }
 }

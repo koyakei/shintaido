@@ -1,5 +1,6 @@
 package ridingSports.ridersAttitude
 
+import library.DistanceVector
 import library.平面
 import library.点
 import java.util.*
@@ -16,7 +17,7 @@ interface RidersCenterOfMassBalanceForMobility {
     /**
      *
      */
-    fun riderに働くVector(): Vector<Number>
+    fun riderに働くVector(): DistanceVector
     //    {
 //        return 重力Vector + 遠心力Vector
 //    }

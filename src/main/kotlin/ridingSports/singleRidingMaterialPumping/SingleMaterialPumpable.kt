@@ -1,6 +1,6 @@
 package ridingSports.singleRidingMaterialPumping
 
-import ridingSports.byFeetThrust.ThrustableLeg
+import ridingSports.byFeetThrust.LimitedLengthLeg
 import ridingSports.byFeetThrust.WalkingTrackCondition
 import ridingSports.byFeetThrust.skating.SkatingCondition
 import ridingSports.pumpingTrack.ForwardBackwardGoal
@@ -23,7 +23,7 @@ interface SingleMaterialPumpable {
     val mobileMachineCondition: SkatingCondition
     val ridersAttitude: RidersAttitude
     fun handle() {
-        mobileMachineCondition.gripToRoad
+        mobileMachineCondition
         // グリップしてる
         // ダブルプッシュを考慮する
         // 外側に押すときに出力を出す
@@ -34,17 +34,17 @@ interface SingleMaterialPumpable {
         // 余地がなくなったら一番縮める
         // ダブルプッシュと矛盾がない？
         // ダブルプッシュはインラインでしかやらないのか？
-        if (mobileMachineCondition.thrustableLeg.footPosition.side
-            != ThrustableLeg.FootPosition.Side.OutsideMax
-            || mobileMachineCondition.thrustableLeg.footPosition.forwardBackward !=
-            ThrustableLeg.FootPosition.ForwardBackward.BackwardMax
-        ){
-            //途中で押す方向を変えることはしないとする。
-            // 計画通りに押さないと大変なので変化させない
-            // 伸ばす方向は後ろかつ外側 3象限　4象限に限るとする。
-            mobileMachineCondition.thrustableLeg.thrustToForward()
-        }else{
-            mobileMachineCondition.thrustableLeg.readyToThrustSidewayPosition()
-        }
+//        if (mobileMachineCondition.thrustableLimitedLengthLeg.footPosition.side
+//            != LimitedLengthLeg.FootPosition.Side.OutsideMax
+//            || mobileMachineCondition.thrustableLimitedLengthLeg.footPosition.forwardBackward !=
+//            LimitedLengthLeg.FootPosition.ForwardBackward.BackwardMax
+//        ){
+//            //途中で押す方向を変えることはしないとする。
+//            // 計画通りに押さないと大変なので変化させない
+//            // 伸ばす方向は後ろかつ外側 3象限　4象限に限るとする。
+//            mobileMachineCondition.thrustableLimitedLengthLeg.thrustToForward()
+//        }else{
+//            mobileMachineCondition.thrustableLimitedLengthLeg.readyToThrustSidewayPosition()
+//        }
     }
 }

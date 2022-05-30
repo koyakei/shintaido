@@ -1,5 +1,7 @@
 package library
 
+import library.vector.PhysicalVector
+
 interface Vector {
     infix operator fun plus(vector: Vector) : Vector
     infix operator fun plus(点: 点) : Vector
@@ -10,5 +12,5 @@ interface Vector {
 
     }
 
-    val direction: Direction
+    val direction: PhysicalVector.PhysicalDirection
 }

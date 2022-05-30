@@ -4,6 +4,8 @@ import KumiteParticipant
 import shintaido.fundamentalBasic.技
 import shintaido.martialArt.単技.attack.punch.不動立ち前進による中段追い突き本突き
 import shintaido.martialArt.単技.recieve.karate.不動立ち前進による下段払い受け
+import shintaido.martialArt.種目別の技.karate.空手の武器
+import shintaido.martialArt.種目別の技.武器の種類
 import shintaido.martialArt.組手.二人組の約束一本組手
 
 /**

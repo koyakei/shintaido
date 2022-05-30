@@ -2,7 +2,8 @@ package ridingSports.downHillSlope
 
 import library.Force
 import library.Radian
-import ridingSports.byFeetThrust.Walkable
+import ridingSports.byFeetThrust.ThrustableOnLimitedGripRoad
+import ridingSports.mobilityMachine.支持基底Condition
 import ridingSports.ridersAttitude.RidersAttitude
 
 /**
@@ -15,9 +16,10 @@ import ridingSports.ridersAttitude.RidersAttitude
  * 平面でのポンピングを先にかんがえるか。
  * エッジグリップがたりないターン後半に立ち上がってエッジグリップを増すことを
  */
-interface ContinuousTurnableInDownhillSlope : Walkable {
+interface ContinuousTurnableInDownhillSlope : ThrustableOnLimitedGripRoad {
     val roadCondition: DownhillSlopeMachineCondition
     val ridersAttitude: RidersAttitude
+    val gripToRoad: 支持基底Condition.GripToRoad
 
     override fun handle() {
         super.handle()
@@ -25,7 +27,7 @@ interface ContinuousTurnableInDownhillSlope : Walkable {
         val angle: Radian = roadCondition.angleBetweenFallLineAndForward
 
         // 必要なエッジグリップを要求
-        val edgeGrip =gripToRoad.maintainGripForThrust(demandedEdgeGripForce(angle))
+        val edgeGrip = gripToRoad.maintainGripForThrust(demandedEdgeGripForce(angle))
 
         // できるだけ遅いヨーイング角速度を得るために　低いロール角　次のターンへの重心移動を速く移動させる
         // そのために高いポジションで切り替えているのか？
