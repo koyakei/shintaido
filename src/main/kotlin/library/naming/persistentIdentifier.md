@@ -42,9 +42,9 @@ best practices and recommendations on the topic for the
 MSs and the EC](
 https://joinup.ec.europa.eu/sites/default/files/document/2013-02/D7.1.3%20-%20Study%20on%20persistent%20URIs.pdf)
 
->4.2.1 　所有者をURIで表示することを避けよ
+> 4.2.1 　所有者をURIで表示することを避けよ
 >
->4.2.2　バージョン管理をURIをでするな。
+> 4.2.2　バージョン管理をURIをでするな。
 >
 > 4.2.3 　URIの再利用をするな
 >
