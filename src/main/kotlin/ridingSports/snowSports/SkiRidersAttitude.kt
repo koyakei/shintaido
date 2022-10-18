@@ -1,8 +1,6 @@
 package ridingSports.snowSports
 
-import library.Direction
-import library.点
-import library.点Range
+import library.*
 import ridingSports.ridersAttitude.RidersAttitude
 
 

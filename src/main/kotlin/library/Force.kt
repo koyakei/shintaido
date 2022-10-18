@@ -1,7 +1,8 @@
 package library
 
 /**
- * force * time leap
+ * force = mass * 加速っどd
+ *
  */
 data class Force(val value: Double) {
 

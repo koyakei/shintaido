@@ -13,9 +13,9 @@ class MobilityMachineDownForceInPumpingTrack(
      * 無限に向かって高くすることを定義する。イデアルを加えたら無限に飛ぶ　離散
      */
     fun unaryPlus() =
-        +ridersAttitude.bodyCenterOfMassHightBetween支持基底点
+        +ridersAttitude.bodyCenterOfMassDistanceBetween支持基底点
 
 
-   fun unaryMinus() = -ridersAttitude.bodyCenterOfMassHightBetween支持基底点
+   fun unaryMinus() = -ridersAttitude.bodyCenterOfMassDistanceBetween支持基底点
 
 }

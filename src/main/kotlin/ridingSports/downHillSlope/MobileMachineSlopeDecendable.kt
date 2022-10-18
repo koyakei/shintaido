@@ -11,7 +11,7 @@ interface MobileMachineSlopeDecendable{
     interface GripToSlope: 支持基底Condition.GripToRoad {
         val ridersAttitude: RidersAttitude
         override fun maintainGripForThrust(force: Force): 支持基底Condition {
-            return ridersAttitude.bodyCenterOfMassHightBetween支持基底点.incForGetGripToRoad(
+            return ridersAttitude.bodyCenterOfMassDistanceBetween支持基底点.incForGetGripToRoad(
                 force
             )
         }
