@@ -8,4 +8,8 @@ interface SkiRidersAttitude: RidersAttitude {
     val yawDirectionAgainstFallLine : Direction
     val centerOfMassMovableRange: 点Range
     val 荷重点の位置 : 点
+
+
+
+
 }

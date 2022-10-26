@@ -4,6 +4,7 @@ import library.Length
 import library.Force
 import library.Mass
 import library.Radian
+import ridingSports.CenterOfPressurePosition
 import ridingSports.mobilityMachine.支持基底Condition
 import kotlin.math.sin
 
@@ -19,7 +20,7 @@ interface RidersAttitude {
     val skierMass: Mass
     val 重心と支持基底点を通る鉛直線との距離: Length
         get() = Length(bodyCenterOfMassDistanceBetween支持基底点.length.length.toFloat() * sin(鉛直に対しての内傾角.number.toFloat()) )
-    val 支持基底点と重心間の距離: Length
+    val distanceBetweenCenterOfMassAndRoad: Length
 
     val 遠心力: Force
 
