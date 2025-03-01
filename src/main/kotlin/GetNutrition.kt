@@ -15,11 +15,15 @@ interface GetNutrition {
     fun 栄養が足りているかの評価(): Boolean {
 
         // ② 糖分の生成が足りる場合、栄養補給は不要
-        if (v糖分の生成が足りるか()) {
-            return true // 糖分を摂取しても良い
+        if (!v糖分の生成が足りるか()) {
+            return false
         }
 
-        // ③ お腹が空いている場合、栄養補給が必要
+        if (v筋力回復に必要な栄養が足りているか()) {
+            return false
+        }
+
+        // 足りなかったら補給する
         return true
     }
 
